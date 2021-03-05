@@ -24,7 +24,8 @@
     "pg": "8.5.1"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "Amir.H Ebrahimi",
+    "email": "amirhosseinebrahimi77@gmail.com"
   },
   "strapi": {
     "uuid": "ea084ebb-820b-4ef3-b750-ea85d9b1b4ab"
