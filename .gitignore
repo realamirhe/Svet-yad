@@ -106,6 +106,8 @@ dist
 # IDE
 .idea
 
+# VSCODE
+.vscode
 
 # DATABASE LOCAL FILES
 database/
