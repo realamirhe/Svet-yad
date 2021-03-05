@@ -105,3 +105,7 @@ dist
 
 # IDE
 .idea
+
+
+# DATABASE LOCAL FILES
+database/
