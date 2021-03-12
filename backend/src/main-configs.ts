@@ -14,7 +14,6 @@ export const NEO4J_OPTIONS = {
   scheme: 'neo4j',
   host: '0.0.0.0',
   port: 7687,
-  // TODO: handle passwords and username in dot env files for
-  username: '',
-  password: '',
+  username: process.env.NEO4J_DB_USERNAME,
+  password: process.env.NEO4J_DB_PASSWORD,
 }
