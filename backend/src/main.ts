@@ -2,7 +2,7 @@ import { NestFactory } from '@nestjs/core'
 import { ValidationPipe } from '@nestjs/common'
 import { AppModule } from './app/app.module'
 import { SwaggerModule } from '@nestjs/swagger'
-import * as configs from './bootstrap-configs'
+import * as configs from './main-configs'
 import { ApiExceptionsFilter } from './utilities/exception/api-exception.filter'
 
 async function bootstrap() {
