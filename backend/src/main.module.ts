@@ -6,6 +6,7 @@ import { WordModule } from './word/word.module'
 import { CategoryModule } from './category/category.module'
 import { LanguageModule } from './language/language.module'
 import { UserModule } from './user/user.module';
+import { ParagraphModule } from './paragraph/paragraph.module';
 
 @Module({
   imports: [
@@ -14,6 +15,7 @@ import { UserModule } from './user/user.module';
     CategoryModule,
     LanguageModule,
     UserModule,
+    ParagraphModule,
   ],
   controllers: [],
   providers: [],
