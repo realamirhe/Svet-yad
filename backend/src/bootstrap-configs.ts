@@ -7,5 +7,5 @@ export const getSwaggerDocumentBuilderConfig = () =>
     .setTitle(module.exports.name)
     .setDescription('The Svet yad main API descriptions')
     .setVersion(module.exports.version)
-    .addTag('memoization')
+    .addTag('main')
     .build()
