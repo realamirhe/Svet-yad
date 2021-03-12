@@ -14,6 +14,6 @@ export class LanguageEntityBuilder implements EntityBuilder {
     const language = record.get('language')
     // TODO: cast type `as Record<languageEntities>`
     const { id, local } = language.properties
-    return new language(id, local)
+    return new Language(id, local)
   }
 }
