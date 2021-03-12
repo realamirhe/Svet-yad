@@ -9,11 +9,11 @@ interface userEntities {
   name: string
 }
 
-export class LanguageEntityBuilder implements EntityBuilder {
+export class UserEntityBuilder implements EntityBuilder {
   static create(record: Record): User {
     const user = record.get('user')
     // TODO: cast type `as Record<userEntities>`
     const { id, name } = user.properties
-    return new user(id, name)
+    return new User(id, name)
   }
 }
