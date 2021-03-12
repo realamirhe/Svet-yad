@@ -5,6 +5,7 @@ import { NEO4J_OPTIONS } from './main-configs'
 import { WordModule } from './word/word.module'
 import { CategoryModule } from './category/category.module'
 import { LanguageModule } from './language/language.module'
+import { UserModule } from './user/user.module';
 
 @Module({
   imports: [
@@ -12,6 +13,7 @@ import { LanguageModule } from './language/language.module'
     WordModule,
     CategoryModule,
     LanguageModule,
+    UserModule,
   ],
   controllers: [],
   providers: [],
