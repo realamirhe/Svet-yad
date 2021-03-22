@@ -2,9 +2,13 @@ import React from 'react'
 import { render, screen } from '@testing-library/react'
 import Home from '.'
 
-test('renders learn react link', () => {
+describe('renders Home page', () => {
   render(<Home />)
   const home = screen.getByTestId('home')
-  expect(home).toBeInTheDocument()
-  expect(home).toHaveClass('app')
+  test('[app] must be in the document', () => {
+    expect(home).toBeInTheDocument()
+  })
+  test('[app] must has an app className', () => {
+    expect(home).toHaveClass('app')
+  })
 })
