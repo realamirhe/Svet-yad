@@ -1,7 +1,8 @@
 import React from 'react'
 import * as ReactDOM from 'react-dom'
-import './index.css'
-import App from './App'
+import './setup/theme/reset.css'
+import App from './scene/home'
+import { reportWebVitals } from './setup/benchmark'
 
 ReactDOM.render(
   <React.StrictMode>
@@ -10,6 +11,5 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-// import { reportWebVitals } from './setup/benchmark'
 // Learn more: https://bit.ly/CRA-vitals
-// reportWebVitals();
+reportWebVitals();

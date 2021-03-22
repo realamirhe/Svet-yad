@@ -28,6 +28,6 @@
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,md,html,css,scss}": "prettier --write",
-    "*.{js,jsx}!json": "eslint"
+    "*.{js,jsx,ts,tsx}!json": "eslint"
   }
 }
