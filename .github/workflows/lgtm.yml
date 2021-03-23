@@ -8,12 +8,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: micnncim/action-lgtm-reaction@v0.6.0
+      - uses: actions/checkout@1.0.0
+      - uses: micnncim/action-lgtm-reaction@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GIPHY_API_KEY: ${{ secrets.GIPHY_API_KEY }}
-        with:
-          trigger: '[".*looks good to me.*"]'
-          override: true
-          source: 'giphy'
