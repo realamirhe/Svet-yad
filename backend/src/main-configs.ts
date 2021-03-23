@@ -1,6 +1,7 @@
 import { DocumentBuilder } from '@nestjs/swagger'
-const pkginfo = require('pkginfo')(module, 'name', 'version')
-export const NEST_FACTORY_OTPTIONS = { cors: true }
+
+require('pkginfo')(module, 'name', 'version')
+export const NEST_FACTORY_OPTIONS = { cors: true }
 
 export const getSwaggerDocumentBuilderConfig = () =>
   new DocumentBuilder()
