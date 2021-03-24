@@ -1,19 +1,20 @@
 {
-  "name": "apps",
-  "private": true,
+  "name": "svetyad",
   "version": "0.1.0",
-  "license": "MIT",
-  "repository": "https://github.com/amirHossein-Ebrahimi/Svet-yad.git",
+  "description": "Svět means (world) in Czech language yâd means (thought, idea) in Persian",
   "author": {
     "name": "Amir.H Ebrahimi",
     "email": "amirhosseinebrahimi77@gmail.com"
   },
-  "description": "Svět means (world) in Czech language yâd means (thought, idea) in Persian",
+  "repository": "https://github.com/amirHossein-Ebrahimi/Svet-yad.git",
+  "private": true,
+  "license": "MIT",
   "scripts": {
     "prettier": "onchange '**/*.{js,css,scss,jsx}' -- prettier --write {{changed}} && git add {{changed}}"
   },
   "workspaces": [
-    "*"
+    "backend/**",
+    "apps/**"
   ],
   "devDependencies": {
     "husky": "^5.1.3",
