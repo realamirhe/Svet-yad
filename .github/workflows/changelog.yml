@@ -1,19 +1,40 @@
-name: Generate changelog
+name: Changelog
+
 on:
+  pull_request:
+    types: [closed]
+
   release:
-    types: [created, edited]
+    types: [published]
+
+  issues:
+    types: [closed, edited]
 
 jobs:
-  generate-changelog:
+  generate_changelog:
     runs-on: ubuntu-latest
+    name: Generate changelog for master branch
     steps:
-    - uses: actions/checkout@v2
-      with:
-        fetch-depth: 0
-    - uses: BobAnkh/auto-generate-changelog@master
-      with:
-        REPO_NAME: 'BobAnkh/auto-generate-changelog'
-        ACCESS_TOKEN: ${{secrets.GITHUB_TOKEN}}
-        PATH: '/CHANGELOG.md'
-        COMMIT_MESSAGE: 'docs(CHANGELOG): update release notes'
-        TYPE: 'feat:Feature,fix:Bug Fixes,docs:Documentation,refactor:Refactor,perf:Performance Improvements,style:UI changes,chore:Chore'
+      - uses: actions/checkout@v1
+
+      - name: Generate changelog
+        uses: charmixer/auto-changelog-action@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit files
+        env:
+          CI_USER: amirHossein-Ebrahimi
+          CI_EMAIL: amirhosseinebrahimi77@gmail.com
+        run: |
+          git config --local user.email "$CI_EMAIL"
+          git config --local user.name "$CI_USER"
+          git add CHANGELOG.md && git commit -m 'Updated CHANGELOG.md' && echo "push=true" >> $GITHUB_ENV || echo "No changes to CHANGELOG.md"
+
+      - name: Push changes
+        if: env.push == 'true'
+        env:
+          CI_USER: ${{ secrets.YOUR_GITHUB_USER }}
+          CI_TOKEN: ${{ secrets.YOUR_GITHUB_TOKEN or GITHUB_TOKEN }}
+        run: |
+          git push "https://$CI_USER:$CI_TOKEN@github.com/$GITHUB_REPOSITORY.git" HEAD:master
