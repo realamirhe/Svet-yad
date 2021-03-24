@@ -22,6 +22,16 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
+
+## Prerequisite
+# Svet-yad
+Svět means (world) in Czech language -yâd means (thought, idea) in Persian
+
+** database setup**
+- database
+  - make sure you have docker and docker-compose
+  - `docker-compose up`
+
 ## Description
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.

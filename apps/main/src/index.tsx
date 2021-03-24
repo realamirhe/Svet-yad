@@ -1,13 +1,13 @@
-import React from 'react'
+import { StrictMode } from 'react'
 import * as ReactDOM from 'react-dom'
 import './setup/theme/reset.css'
 import Home from './scene/home'
 import { reportWebVitals } from './setup/benchmark'
 
 ReactDOM.render(
-  <React.StrictMode>
+  <StrictMode>
     <Home />
-  </React.StrictMode>,
+  </StrictMode>,
   document.getElementById('root'),
 )
 
