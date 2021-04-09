@@ -1,4 +1,5 @@
-#<h1 align="center">Svět yâd</h1> <img src="./doc/assets/readme/logo.png" alt="logo" />
+#<h1 align="center">Svět yâd</h1> 
+<img src="./doc/assets/readme/logo.png" alt="logo" />
 
 <b>An extensible language learning echo-system</b>
 Ofcourse you can search for the meaning, and save the word into your short term memory (keep it for 6 sec), but we all know process of transfering a word from your mind-language to daily speek is not this easy.
@@ -27,11 +28,5 @@ Our team is made of 3 friends. We are just a geeks who want to have fun and make
 
 <img src="./doc/assets/readme/moose.png" alt="Moose" align="center"/>
 > His is Moose and this animal represent headstrong, unstoppable, longevity! 
-
-
-## Feel free to send your request, idea, interest, enthustast via
-
-Or even if you want to join us. Send us an message!
-[Telegram](https://t.me/svetyad) or [GitHub discussion](https://github.com/amirHossein-Ebrahimi/Svet-yad/discussions)
 
 <small>Do **Open-source** do **Big**!<small>
