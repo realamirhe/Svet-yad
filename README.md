@@ -22,7 +22,7 @@ Nowadyas every one knows that a words must be memorized in a context. Our Jobs i
 
 "Svět" means (world) in Czech language yâd means (thought, idea) in Persian.
 
-Our team is made of 3 friends. We are just a geeks who want to have fun and make learning new vocabulary more enjoyable. One of us is from Iran and the other two is from Czech Republic.
+Our team is made of 3 friends. We are just geeks who want to have fun and make learning new vocabulary more enjoyable. One of us is from Iran and the other two are from the Czech Republic.
 
 ## We have our own mascot and he have lots of buddies! 
 
