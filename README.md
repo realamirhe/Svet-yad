@@ -1,4 +1,4 @@
-#<h1 align="center">Svět yâd</h1> <img src="./doc/assets/readme/logo.jpg" alt="logo" />
+#<h1 align="center">Svět yâd</h1> <img src="./doc/assets/readme/logo.png" alt="logo" />
 
 <b>An extensible language learning echo-system</b>
 Ofcourse you can search for the meaning, and save the word into your short term memory (keep it for 6 sec), but we all know process of transfering a word from your mind-language to daily speek is not this easy.
@@ -21,11 +21,11 @@ Nowadyas every one knows that a words must be memorized in a context. Our Jobs i
 
 "Svět" means (world) in Czech language yâd means (thought, idea) in Persian.
 
-Our team is made of 3 friends. We are just a geeks who want to have fun and make learning new vocabulary more enjoyable. One of us is from Iran and the other twi is from Czech Republic.
+Our team is made of 3 friends. We are just a geeks who want to have fun and make learning new vocabulary more enjoyable. One of us is from Iran and the other two is from Czech Republic.
 
 ## We have our own mascot and he have lots of buddies! 
 
-<img src="" alt="" align="center"/>
+<img src="./doc/assets/readme/moose.png" alt="Moose" align="center"/>
 > His is Moose and this animal represent headstrong, unstoppable, longevity! 
 
 
